@@ -1,0 +1,10 @@
+#intro {
+  background-color:silver;
+  background-size: cover;
+  margin-top: 0;
+}
+#intro .slogan{
+  margin-top: 0;
+  padding: 250px 0 60px;
+  text-align: center;
+}

@@ -1,10 +1,69 @@
+body{
+  font-family: 'Nunito', sans-serif;
+}
 #intro {
-  background-color:silver;
+  background-color: #ca72a2;
+  background-image: url("../img/main-pic-01.jpg");
   background-size: cover;
   margin-top: 0;
+  transition: width 2s;
+  -webkit-transition: width 2s;
 }
 #intro .slogan{
   margin-top: 0;
-  padding: 250px 0 60px;
+  padding: 250px 0 250px;
   text-align: center;
+  color:white;
 }
+#intro .filtro-violeta{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/filtro-violeta-01.png");
+  background-size: cover;
+}
+.slogan figure{
+  width: 278px;
+  margin: 0 auto 0;
+}
+.slogan img{
+  width: 100%;
+}
+.slogan p{
+  margin-top:10px;
+  font-weight: lighter;
+}
+/*animation */
+.animated { 
+    -webkit-animation-duration: 1.5s; 
+    animation-duration: 1.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+

@@ -11,19 +11,53 @@ body{
 }
 #intro .slogan{
   margin-top: 0;
-  padding: 250px 0 250px;
+  padding: 0px 0 233px;
   text-align: center;
-  color:white;
 }
 #intro .filtro-violeta{
   width: 100%;
   height: 100%;
   background-image: url("../img/filtro-violeta-01.png");
   background-size: cover;
+  color: white;
+}
+a,h1{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.nav a{
+  color: white;
+  font-weight: lighter;
+  font-size: 12px:;
+}
+.nav a, .navbar-toggle{
+  opacity: .75;
+}
+.nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target{
+  background-color: transparent;
+  opacity: 1;
+}
+.navbar-collapse.in{
+  position: absolute;
+}
+.navbar-toggle{
+  background-image: url("../img/toggle-01.png");
+  background-size: cover;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.no-dropdown-transition{
+  -webkit-transition: height 0;
+  -moz-transition: height 0;
+  -ms-transition: height 0;
+  -o-transition: height 0;
+  transition: height 0;
 }
 .slogan figure{
   width: 278px;
   margin: 0 auto 0;
+  padding-top: 187px;
 }
 .slogan img{
   width: 100%;
@@ -67,3 +101,9 @@ body{
     animation-name: fadeInUp; 
 }
 
+/*media queries*/
+@media (min-width: 768px){
+  .navbar-nav>li>a{
+    padding-top: 30px;
+  }
+}

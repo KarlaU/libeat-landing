@@ -21,43 +21,60 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-    <section id="intro" class="intro">
-      <div class="filtro-violeta">
-          <!--estúpida y sensual navbar-->
-         <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button id="toggleEffect" type="button" onclick="toggle-effect('toggleEffect')" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+    <div class="intro-container">
+      <section id="intro" class="intro">
+        <div class="filtro-violeta">
+            <!--estúpida y sensual navbar-->
+          <div class="container">
+           <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button id="toggleEffect" type="button" onlick="toggleEffect1('#toggleEffect')" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse no-dropdown-transition">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="">Qué es Libeat</a></li>
+                  <li><a href="">Cómo Funciona</a></li>
+                  <li><a href="">¿Por qué libeat?</a></li>
+                  <li><a href="">Contacto</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+          </nav>
+            <!--estúpida y sensual navbar-->
+            <div id="animated-example" class="slogan animated fadeInUp">
+              <figure>
+                <img alt="Libeat" src="img/logo-01.png">
+              </figure>
+              <p>vive la experiencia del momento</p>
+            </div> 
+            <p>Descárgala en</p>
+            <img class="stores" src="img/stores-01.png">
+            <img class="stores" src="img/stores-02.png">
           </div>
-          <div id="navbar" class="navbar-collapse collapse no-dropdown-transition">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="">Qué es Libeat</a></li>
-              <li><a href="">Cómo Funciona</a></li>
-              <li><a href="">¿Por qué libeat?</a></li>
-              <li><a href="">Contacto</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-          <!--estúpida y sensual navbar-->
-          <div id="animated-example" class="slogan animated fadeInUp">
-          <figure>
-            <img alt="Libeat" src="img/logo-01.png">
-          </figure>
-          <p>vive la experiencia del momento</p>
         </div> 
-      </div> 
-    </section>
+      </section>
+    </div>
     <script type="text/javascript">
-      $(document).ready(function toggleEffect(id){
-          $(id).addClass('navbar-toggle-active');
-        }
-      })
+        $(document).ready(function(e){
+          function toggleEffect(id){
+            $(id).addClass('navbar-toggle-active');
+          }
+        });
+        var jumboHeight = $('.intro-container').outerHeight();
+          function parallax(){
+              var scrolled = $(window).scrollTop();
+              $('.intro').css('height', (jumboHeight-scrolled) + 'px');
+          }
+
+          $(window).scroll(function(e){
+              parallax();
+          });
     </script>
     </body>
 </html>

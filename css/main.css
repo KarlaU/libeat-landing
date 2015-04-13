@@ -1,14 +1,22 @@
 body{
   font-family: 'Nunito', sans-serif;
+  height: 100%;
 }
-#intro {
+.main-pic{
   background-color: #ca72a2;
-  background-image: url("../img/main-pic-01.jpg");
   background-size: 800px;
+  height: 410px;
   margin-top: 0;
   transition: width 2s;
   -webkit-transition: width 2s;
-  height: 410px;
+}
+.normal-pic {
+  background-image: url("../img/main-pic-01.jpg");
+}
+.blurred-pic{
+  background-image: url("../img/main-pic-blurred.jpg");
+  transition: background-image .2s;
+  -webkit-transition: background-image .2s;
 }
 #intro .slogan{
   margin-top: 0;
@@ -16,11 +24,11 @@ body{
   text-align: center;
 }
 #intro .filtro-violeta{
-  width: 100%;
-  height: 100%;
   background-image: url("../img/filtro-violeta-01.png");
   background-size: 1000px;
   color: white;
+  height: 410px;
+  width: 100%;
 }
 a,h1{
   text-transform: uppercase;
@@ -36,19 +44,45 @@ a,h1{
 }
 .nav a, .navbar-toggle, .stores{
   opacity: .75;
+  -webkit-transition: opacity .2s; /* Safari */
+  transition: opacity .2s;
+}
+.nav img{
+  margin: 33px auto 20px;
 }
 .nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target, .stores:hover{
   background-color: transparent; 
   opacity: 1;
 }
+.nav .libeat-nav{
+  width: 100px;
+}
+.nav .llamada-icon{
+  width: 22px;
+}
+.nav .trazo{
+  background-image: url("../img/trazo-01.png");
+  background-position:center;;
+  background-repeat: no-repeat;
+  height: 5px;
+  margin-bottom:18px;
+  opacity: .7;
+  width: 100%;
+}
 .navbar-collapse.in{
   position: absolute;
+  z-index: 100;
+  text-align: center !important;
+  width: 100%;
 }
 .navbar-toggle{
   background-image: url("../img/toggle-01.png");
   background-size: 40px;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 20px;
+  -webkit-transition: background-image .2s; /* Safari */
+  transition: background-image .2s;
 }
 .navbar-toggle-active{
   background-image: url("../img/toggle-active-01.png");
@@ -115,13 +149,14 @@ a,h1{
 
 /*media queries*/
 @media (min-width: 768px){
-  #intro {
+  .main-pic{
   height: 470px;
   background-position: center 30%;
   background-size: cover;
   }
   #intro .filtro-violeta{
     background-size: cover;
+    height: 470px;
   }
   #intro .slogan{
     padding: 0px 0 80px;

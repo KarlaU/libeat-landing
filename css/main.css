@@ -5,7 +5,7 @@ body{
 .main-pic{
   background-color: #ca72a2;
   background-size: 800px;
-  height: 410px;
+  height: 470px;
   margin-top: 0;
   transition: width 2s;
   -webkit-transition: width 2s;
@@ -20,17 +20,17 @@ body{
 }
 #intro .slogan{
   margin-top: 0;
-  padding: 0px 0 45px;
+  padding: 0px 0 120px;
   text-align: center;
 }
 #intro .filtro-violeta{
   background-image: url("../img/filtro-violeta-01.png");
   background-size: 1000px;
   color: white;
-  height: 410px;
+  height: 470px;
   width: 100%;
 }
-a,h1{
+a,h1, .nav{
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -53,6 +53,9 @@ a,h1{
 .nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target, .stores:hover{
   background-color: transparent; 
   opacity: 1;
+}
+.nav p{
+ font-size: 10px;
 }
 .nav .libeat-nav{
   width: 100px;
@@ -156,7 +159,6 @@ a,h1{
   }
   #intro .filtro-violeta{
     background-size: cover;
-    height: 470px;
   }
   #intro .slogan{
     padding: 0px 0 80px;

@@ -21,7 +21,7 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-    <div class="intro-container">
+        <div class="parallax-container">
         <section id="intro" class="main-pic normal-pic">
             <div class="filtro-violeta">
             <!--estúpida y sensual navbar-->
@@ -65,6 +65,16 @@
                 </div>
             </div> 
         </section>
+        </div>
+        <section>
+            <div class="queslibeat-mobile-image">
+                <img class="loquito" src="img/loquito.jpg">
+                <div class="beat">
+                </div>
+            </div>
+            <h2>¿Qué es libeat</h2>
+            <p class="bajada">Con Libeat, vive la ciudad mientras recibes oportunidades e información en sintonía con tus intereses. Descubre nuevas experiencias en el momento indicado y en el lugar donde te encuentres.</p>
+        </section>
     </div>
     <script type="text/javascript">
       function toggleEffect(id){
@@ -74,15 +84,15 @@
         $('#intro').toggleClass('blurred-pic');
       }
 
-      var jumboHeight = $('.intro-container').outerHeight();
-        function parallax(){
-          var scrolled = $(window).scrollTop();
-          $('.intro').css('height', (jumboHeight-scrolled) + 'px');
-      }
+        var jumboHeight = $('#intro').outerHeight();
+            function parallax(){
+                var scrolled = $(window).scrollTop();
+                $('.parallax-container').css('height', (jumboHeight-scrolled) + 'px');
+            }
 
-      $(window).scroll(function(e){
-        parallax();
-      });
+            $(window).scroll(function(e){
+                parallax();
+            });
     </script>
   </body>
 </html>

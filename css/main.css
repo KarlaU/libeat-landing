@@ -10,6 +10,9 @@ body{
   transition: width 2s;
   -webkit-transition: width 2s;
 }
+.parallax-container{
+  overflow: hidden;
+}
 .normal-pic {
   background-image: url("../img/main-pic-01.jpg");
 }
@@ -17,6 +20,9 @@ body{
   background-image: url("../img/main-pic-blurred.jpg");
   transition: background-image .2s;
   -webkit-transition: background-image .2s;
+}
+#call-to-action p{
+  text-align: left;
 }
 #intro .slogan{
   margin-top: 0;
@@ -30,12 +36,38 @@ body{
   height: 470px;
   width: 100%;
 }
-a,h1, .nav{
-  text-transform: uppercase;
+#intro .filtro-violeta p{
+  color: white;
+}
+a,h1, h2,.nav{
   letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+h2{
+  color: #dd2475;
+  font-size: 27px;
+  letter-spacing: 1.1px;
+  margin: 37px auto 20px;
+}
+h2, h3,p{
+  text-align: center;
+}
+p{
+  color: #9a8f93;
+  font-weight: lighter;
+  font-size: 16px;
+}
+.bajada{
+  font-size: 21px;
+  margin: 0 auto 0;
+  max-width: 800px;
 }
 .intro-container{
   overflow: hidden;
+}
+.loquito{
+  border-radius: 50%;
+  width: 100%;
 }
 .nav a{
   color: white;
@@ -78,6 +110,9 @@ a,h1, .nav{
   text-align: center !important;
   width: 100%;
 }
+.navbar-nav{
+  margin-top: 0;
+}
 .navbar-toggle{
   background-image: url("../img/toggle-01.png");
   background-size: 40px;
@@ -97,6 +132,19 @@ a,h1, .nav{
   -ms-transition: height 0;
   -o-transition: height 0;
   transition: height 0;
+}
+.queslibeat-mobile-image{
+  display: block;
+  margin: 40px auto 0;
+  position: relative;
+  width: 270px;
+}
+.queslibeat-mobile-image .beat{
+  height: 50px;
+  left: 166px;
+  position: absolute;
+  top: 139px;
+  width: 50px;
 }
 .slogan figure{
   width: 208px;
@@ -153,25 +201,26 @@ a,h1, .nav{
 /*media queries*/
 @media (min-width: 768px){
   .main-pic{
-  height: 470px;
+  height: 620px;
   background-position: center 30%;
   background-size: cover;
   }
   #intro .filtro-violeta{
     background-size: cover;
+    height: 620px;
   }
   #intro .slogan{
-    padding: 0px 0 80px;
+    padding: 0px 0 160px;
   }
   .navbar-nav>li>a{
     padding-top: 30px;
   }
   .slogan figure{
     width: 278px;
-    padding-top: 95px;
+    padding-top: 160px;
   }
   .stores{
-    width: 170px;
+    width: 190px;
     background-blend-mode: lighten;
     -webkit-background-blend-mode: lighten;
   }

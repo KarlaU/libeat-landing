@@ -68,6 +68,9 @@ section{
 #intro .filtro-violeta p{
   color: white;
 }
+.clearfix{
+  margin-top: 60px;
+}
 .bajada{
   font-size: 21px;
   margin: 0 auto 0;
@@ -79,6 +82,11 @@ section{
 .loquito{
   border-radius: 50%;
   width: 100%;
+}
+.porquelibeat img{
+  width: 80px;
+  display: block;
+  margin: 0 auto 0;
 }
 .nav a{
   color: white;

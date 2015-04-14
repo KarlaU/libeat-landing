@@ -68,6 +68,11 @@ section{
 #intro .filtro-violeta p{
   color: white;
 }
+#step-1, #step-2, #step-3{
+  display: block;
+  margin: 0 auto 0;
+  width: 75%;
+}
 .clearfix .column{
   margin-top: 60px;
 }
@@ -224,8 +229,8 @@ section{
 }
 /*animation beat que es libeat*/
 .animated-1 { 
-    -webkit-animation-duration: 4s; 
-    animation-duration: 4s; 
+    -webkit-animation-duration: 6s; 
+    animation-duration: 6s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-timing-function: ease-in-out; 

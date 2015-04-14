@@ -68,8 +68,11 @@ section{
 #intro .filtro-violeta p{
   color: white;
 }
-.clearfix{
+.clearfix .column{
   margin-top: 60px;
+}
+.clearfix .no-margin{
+  margin: 0px;
 }
 .bajada{
   font-size: 21px;

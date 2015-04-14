@@ -1,10 +1,10 @@
-body{
-  font-family: 'Nunito', sans-serif;
-  height: 100%;
-}
 a,h1, h2,.nav{
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
 }
 h2{
   color: #dd2475;
@@ -15,10 +15,18 @@ h2{
 h2, h3,p{
   text-align: center;
 }
+h3{
+  color:#665f62;
+}
 p{
   color: #9a8f93;
   font-weight: lighter;
   font-size: 16px;
+}
+section{
+  border-bottom: solid 1px #b9b6b7;
+  padding-bottom: 75px;
+  padding-top: 43px;
 }
 .main-pic{
   background-color: #ca72a2;
@@ -41,6 +49,9 @@ p{
 }
 #call-to-action p{
   text-align: left;
+}
+#intro{
+  padding-top: 0;
 }
 #intro .slogan{
   margin-top: 0;
@@ -288,17 +299,17 @@ p{
 
 /*media queries*/
 @media (min-width: 768px){
-  .main-pic{
-  height: 620px;
-  background-position: center 30%;
-  background-size: cover;
-  }
   #intro .filtro-violeta{
     background-size: cover;
     height: 620px;
   }
   #intro .slogan{
     padding: 0px 0 160px;
+  }
+  .main-pic{
+  height: 620px;
+  background-position: center 30%;
+  background-size: cover;
   }
   .navbar-nav>li>a{
     padding-top: 30px;

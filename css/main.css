@@ -23,7 +23,7 @@ p{
   font-weight: lighter;
   font-size: 16px;
 }
-section{
+section, .jumbotron .filtro-violeta{
   border-bottom: solid 1px #b9b6b7;
   padding-bottom: 75px;
   padding-top: 43px;
@@ -50,23 +50,13 @@ section{
 #call-to-action p{
   text-align: left;
 }
-#intro{
-  padding-top: 0;
+#intro, .jumbotron{
+  padding: 0;
 }
 #intro .slogan{
   margin-top: 0;
   padding: 0px 0 120px;
   text-align: center;
-}
-#intro .filtro-violeta{
-  background-image: url("../img/filtro-violeta-01.png");
-  background-size: 1000px;
-  color: white;
-  height: 470px;
-  width: 100%;
-}
-#intro .filtro-violeta p{
-  color: white;
 }
 #step-1, #step-2, #step-3{
   display: block;
@@ -84,8 +74,27 @@ section{
   margin: 0 auto 0;
   max-width: 800px;
 }
+.filtro-violeta{
+  background-image: url("../img/filtro-violeta-01.png");
+  background-size: 1000px;
+  color: white;
+  height: 470px;
+  width: 100%;
+}
+.filtro-violeta p, .filtro-violeta h2{
+  color: white;
+}
+.form-group .centered-form{
+  float: none;
+  margin:0 auto 0;
+}
 .intro-container{
   overflow: hidden;
+}
+.jumbotron{
+  background-image:url("../img/fondo-contacto-01.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .loquito{
   border-radius: 50%;

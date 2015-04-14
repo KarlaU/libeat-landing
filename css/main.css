@@ -96,6 +96,9 @@ section{
   display: block;
   margin: 0 auto 0;
 }
+.porquelibeat p{
+  margin-top: 25px;
+}
 .nav a{
   color: white;
   font-weight: lighter;
@@ -334,7 +337,7 @@ section{
 @-webkit-keyframes bounceInUp { 
     0% { 
         opacity: 0; 
-        -webkit-transform: translateY(2000px); 
+        -webkit-transform: translateY(40px); 
     } 
     60% { 
         opacity: 1; 
@@ -351,7 +354,7 @@ section{
 @keyframes bounceInUp { 
     0% { 
         opacity: 0; 
-        transform: translateY(2000px); 
+        transform: translateY(40px); 
     } 
     60% { 
         opacity: 1; 

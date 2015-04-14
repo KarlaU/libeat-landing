@@ -2,6 +2,24 @@ body{
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
+a,h1, h2,.nav{
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+h2{
+  color: #dd2475;
+  font-size: 27px;
+  letter-spacing: 1.1px;
+  margin: 37px auto 20px;
+}
+h2, h3,p{
+  text-align: center;
+}
+p{
+  color: #9a8f93;
+  font-weight: lighter;
+  font-size: 16px;
+}
 .main-pic{
   background-color: #ca72a2;
   background-size: 800px;
@@ -38,24 +56,6 @@ body{
 }
 #intro .filtro-violeta p{
   color: white;
-}
-a,h1, h2,.nav{
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-h2{
-  color: #dd2475;
-  font-size: 27px;
-  letter-spacing: 1.1px;
-  margin: 37px auto 20px;
-}
-h2, h3,p{
-  text-align: center;
-}
-p{
-  color: #9a8f93;
-  font-weight: lighter;
-  font-size: 16px;
 }
 .bajada{
   font-size: 21px;
@@ -140,8 +140,11 @@ p{
   width: 270px;
 }
 .queslibeat-mobile-image .beat{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45px;
   height: 50px;
-  left: 166px;
+  left: 106px;
   position: absolute;
   top: 139px;
   width: 50px;
@@ -163,7 +166,7 @@ p{
   background-blend-mode: lighten;
   -webkit-background-blend-mode: lighten;
 }
-/*animation */
+/*animation libeat*/
 .animated { 
     -webkit-animation-duration: 1.5s; 
     animation-duration: 1.5s; 
@@ -196,6 +199,91 @@ p{
 .fadeInUp { 
     -webkit-animation-name: fadeInUp; 
     animation-name: fadeInUp; 
+}
+/*animation beat que es libeat*/
+.animated-1 { 
+    -webkit-animation-duration: 4s; 
+    animation-duration: 4s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes fadeInUp-1 { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    16% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+        background-image: url("../img/beat-1.png");
+    } 
+    32% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    48% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+        background-image: url("../img/beat-2.png");
+    }
+    64% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    80% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+        background-image: url("../img/beat-3.png");
+    }
+    100%{
+      opacity: 0; 
+      -webkit-transform: translateY(20px);
+    }
+} 
+
+@keyframes fadeInUp-1 { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    16% { 
+        opacity: 1; 
+        transform: translateY(0); 
+        background-image: url("../img/beat-1.png");
+    } 
+    32% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    48% { 
+        opacity: 1; 
+        transform: translateY(0); 
+        background-image: url("../img/beat-2.png");
+    }
+    64% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    80% { 
+        opacity: 1; 
+        transform: translateY(0); 
+        background-image: url("../img/beat-3.png");
+    }
+    100%{
+      opacity: 0; 
+      transform: translateY(20px);
+    }
+} 
+
+
+.fadeInUp-1 { 
+    -webkit-animation-name: fadeInUp-1; 
+    animation-name: fadeInUp-1; 
 }
 
 /*media queries*/

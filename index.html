@@ -72,25 +72,25 @@
                 <div id="animated-example-1" class="beat animated-1 fadeInUp-1">
                 </div>
             </div>
-            <h2>¿Qué es libeat</h2>
+            <h2>¿Qué es libeat?</h2>
             <p class="bajada">Con Libeat, vive la ciudad mientras recibes oportunidades e información en sintonía con tus intereses. Descubre nuevas experiencias en el momento indicado y en el lugar donde te encuentres.</p>
         </section>
-        <section class="como-funciona ">
+        <section class="como-funciona">
             <div class="container">
                 <h2>¿Cómo Funciona?</h2>
                 <div class="clearfix">
                     <div class="col-md-4 column">
-                        <img id="step-1" src="img/Nexus6PSDMockUp1.png">
+                        <img class="animated v-hidden" id="step-1" src="img/Nexus6PSDMockUp1.png">
                         <h3>Únete a Libeat</h3>
                         <p>Descarga la aplicación móvil desde Google Play o App Store, e ingresa con Facebook.</p>
                     </div>
                     <div class="col-md-4 column">
-                        <img id="step-2" src="img/Nexus6PSDMockUp2.png">
+                        <img class="animated v-hidden" id="step-2" src="img/Nexus6PSDMockUp2.png">
                         <h3>Escoge tus gustos</h3>
                         <p>Elige tus intereses y marcas favoritas para recibir información y beneficios.</p>
                     </div>
                     <div class="col-md-4 column">
-                        <img id="step-3" src="img/Nexus6PSDMockUp3.png">
+                        <img class="animated v-hidden" id="step-3" src="img/Nexus6PSDMockUp3.png">
                         <h3>Recibe beats</h3>
                         <p>Cuando transites por una zona donde haya sorpresas, oportunidades y actividades.</p>
                     </div>
@@ -144,16 +144,30 @@
         $('#call-to-action').toggleClass('hidden');
         $('#intro').toggleClass('blurred-pic');
       }
+    var jumboHeight = $('#intro').outerHeight();
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+            $('.parallax-container').css('height', (jumboHeight-scrolled) + 'px');
+        }
 
-        var jumboHeight = $('#intro').outerHeight();
-            function parallax(){
-                var scrolled = $(window).scrollTop();
-                $('.parallax-container').css('height', (jumboHeight-scrolled) + 'px');
+        $(window).scroll(function(e){
+            parallax();
+        });
+    $(window).scroll(function() {
+        $('.beat').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+5) {
+                $('#step-1').removeClass("v-hidden");
+                $('#step-1').addClass("bounceInUp");
+                $('#step-2').removeClass("v-hidden");
+                $('#step-2').addClass("bounceInUp");
+                $('#step-3').removeClass("v-hidden");
+                $('#step-3').addClass("bounceInUp");
             }
-
-            $(window).scroll(function(e){
-                parallax();
-            });
+        });
+    });
     </script>
   </body>
 </html>

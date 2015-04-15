@@ -1,10 +1,15 @@
-a,h1, h2,.nav{
+a,h1, h2, .btn, .nav{
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 body{
   font-family: 'Nunito', sans-serif;
   height: 100%;
+}
+footer .footer-logo{
+  width: 180px;
+  display:block;
+  margin: 0 auto 0;
 }
 h2{
   color: #dd2475;
@@ -23,10 +28,35 @@ p{
   font-weight: lighter;
   font-size: 16px;
 }
-section, .jumbotron .filtro-violeta{
+section{
   border-bottom: solid 1px #b9b6b7;
+}
+section, .jumbotron .filtro-violeta, footer{
   padding-bottom: 75px;
   padding-top: 43px;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+button[type="submit"]:focus,
+button[type="submit"]:hover,
+.form-control:focus,
+.uneditable-input:focus {   
+  border-color: #f7cdc1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #f27441;
+  outline: 0 none;
 }
 .main-pic{
   background-color: #ca72a2;
@@ -63,31 +93,45 @@ section, .jumbotron .filtro-violeta{
   margin: 0 auto 0;
   width: 75%;
 }
+.bajada{
+  font-size: 21px;
+  margin: 0 auto 0;
+  max-width: 800px;
+}
+.btn{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 0;
+  padding: 9px 15px;
+  margin-top: 7px;
+  width: 100%;
+}
+.centered-col{
+  float: none;
+  margin:0 auto 18px;
+}
 .clearfix .column, .form-horizontal{
   margin-top: 60px;
 }
 .clearfix .no-margin{
   margin: 0px;
 }
-.bajada{
-  font-size: 21px;
-  margin: 0 auto 0;
-  max-width: 800px;
-}
 .filtro-violeta{
   background-image: url("../img/filtro-violeta-01.png");
-  background-size: 1000px;
+  background-size: cover;
   color: white;
   height: 470px;
   width: 100%;
 }
-.filtro-violeta p, .filtro-violeta h2{
+.filtro-violeta p, .filtro-violeta h2, .btn:hover{
   color: white;
 }
 .form-control{
   background-color: transparent;
   border-color: white;
   border-radius: 0;
+  color: white;
+  font-weight: lighter;
 }
 .form-control::-webkit-input-placeholder { 
   color: white; 
@@ -105,10 +149,6 @@ section, .jumbotron .filtro-violeta{
   color: white; 
   font-weight: lighter;
 }
-.form-group .centered-form{
-  float: none;
-  margin:0 auto 18px;
-}
 .form-horizontal .form-group{
   margin: 0;
 }
@@ -119,6 +159,9 @@ section, .jumbotron .filtro-violeta{
   background-image:url("../img/fondo-contacto-01.jpg");
   background-position: center;
   background-size: cover;
+}
+.jumbotron .filtro-violeta{
+  height: auto;
 }
 .loquito{
   border-radius: 50%;

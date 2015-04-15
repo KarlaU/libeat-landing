@@ -6,10 +6,21 @@ body{
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
+footer a{
+  color: #b5488b;
+  font-weight: bolder;
+  letter-spacing: normal;
+  text-transform: none;
+}
+footer a:hover{
+  color: #7f3366;
+  text-decoration: none;
+}
 footer p{
+  margin-bottom: 0;
   text-align: left;
 }
-footer #call-to-action{
+footer #call-to-action, footer .corfo{
   margin-bottom: 37px;
 }
 footer .corfo{

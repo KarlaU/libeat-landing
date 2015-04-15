@@ -63,7 +63,7 @@ section, .jumbotron .filtro-violeta{
   margin: 0 auto 0;
   width: 75%;
 }
-.clearfix .column{
+.clearfix .column, .form-horizontal{
   margin-top: 60px;
 }
 .clearfix .no-margin{
@@ -84,9 +84,33 @@ section, .jumbotron .filtro-violeta{
 .filtro-violeta p, .filtro-violeta h2{
   color: white;
 }
+.form-control{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 0;
+}
+.form-control::-webkit-input-placeholder { 
+  color: white; 
+  font-weight: lighter;
+}
+.form-control:-moz-placeholder { 
+  color: white; 
+  font-weight: lighter;
+}
+.form-control::-moz-placeholder { 
+  color: white; 
+  font-weight: lighter;
+}
+.form-control:-ms-input-placeholder { 
+  color: white; 
+  font-weight: lighter;
+}
 .form-group .centered-form{
   float: none;
-  margin:0 auto 0;
+  margin:0 auto 18px;
+}
+.form-horizontal .form-group{
+  margin: 0;
 }
 .intro-container{
   overflow: hidden;

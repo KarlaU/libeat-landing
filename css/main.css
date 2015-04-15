@@ -6,10 +6,20 @@ body{
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
+footer p{
+  text-align: left;
+}
+footer #call-to-action{
+  margin-bottom: 37px;
+}
+footer .corfo{
+  display: block;
+  width: 150px;
+}
 footer .footer-logo{
   width: 180px;
   display:block;
-  margin: 0 auto 0;
+  margin: 0 auto 50px;
 }
 h2{
   color: #dd2475;
@@ -20,7 +30,7 @@ h2{
 h2, h3,p{
   text-align: center;
 }
-h3{
+h3, strong{
   color:#665f62;
 }
 p{
@@ -34,6 +44,10 @@ section{
 section, .jumbotron .filtro-violeta, footer{
   padding-bottom: 75px;
   padding-top: 43px;
+}
+strong{
+  font-size: 18px;
+  font-weight: lighter;
 }
 textarea:focus,
 input[type="text"]:focus,

@@ -145,7 +145,7 @@
             <div class="filtro-violeta">
                 <h2>Contacto</h2><form >
                 <form class="form-horizontal">
-                    <fieldset>
+                    <fieldset
                         <div class="form-group">
                             <div class="col-md-6 centered-col">
                                 <input id="name" name="name" type="text" placeholder="Tu nombre" class="form-control">
@@ -202,6 +202,15 @@
         $('#call-to-action').toggleClass('hidden');
         $('#intro').toggleClass('blurred-pic');
       }
+    var jumboHeight = $('#intro').outerHeight();
+        function parallax(){
+            var scrolled = $(window).scrollTop();
+            $('.parallax-container').css('height', (jumboHeight-scrolled) + 'px');
+        }
+
+        $(window).scroll(function(e){
+            parallax();
+        });
     $(window).scroll(function() {
         $('.beat').each(function(){
         var imagePos = $(this).offset().top;

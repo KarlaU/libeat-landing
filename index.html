@@ -202,18 +202,6 @@
         $('#call-to-action').toggleClass('hidden');
         $('#intro').toggleClass('blurred-pic');
       }
-    var jumboHeight = $('#intro').outerHeight();
-        function parallax(){
-            var scrolled = $(window).scrollTop();
-            $('.parallax-container').css('height', (jumboHeight-scrolled) + 'px');
-        }
-
-        $(window).scroll(function(e){
-            parallax();
-        });
-    $(window).scroll(function() {
-        $('.beat').each(function(){
-        var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+5) {

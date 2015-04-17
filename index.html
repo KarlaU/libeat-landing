@@ -202,6 +202,9 @@
         $('#call-to-action').toggleClass('hidden');
         $('#intro').toggleClass('blurred-pic');
       }
+    $(window).scroll(function() {
+        $('.beat').each(function(){
+        var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
             if (imagePos < topOfWindow+5) {

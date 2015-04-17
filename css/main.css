@@ -209,7 +209,7 @@ button[type="submit"]:hover,
   font-weight: lighter;
   font-size: 12px:;
 }
-.nav a, .navbar-toggle, .stores{
+.nav a, .navbar-toggle {
   opacity: .75;
   -webkit-transition: opacity .2s; /* Safari */
   transition: opacity .2s;
@@ -217,7 +217,7 @@ button[type="submit"]:hover,
 .nav img{
   margin: 33px auto 20px;
 }
-.nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target, .stores:hover{
+.nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target{
   background-color: transparent; 
   opacity: 1;
 }

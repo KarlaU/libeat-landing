@@ -297,9 +297,10 @@ button[type="submit"]:hover,
   font-weight: lighter;
 }
 .stores{
-  width: 130px;
   background-blend-mode: lighten;
+  margin: 5px;
   -webkit-background-blend-mode: lighten;
+  width: 130px;
 }
 .v-hidden{
   visibility: hidden;
@@ -429,7 +430,7 @@ button[type="submit"]:hover,
     50% { transform: scale(1.1); } 
     100% { transform: scale(1); } 
 } 
-.pulse:hover, .stores:hover { 
+.pulse:hover{ 
     -webkit-animation-name: pulse; 
     animation-name: pulse; 
 }

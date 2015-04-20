@@ -47,6 +47,10 @@ h2, h3,p{
 h3, strong{
   color:#665f62;
 }
+nav a:hover,nav a:focus, .filtro-violeta a:hover{
+  opacity: 1;
+  text-decoration: none;
+}
 p{
   color: #9a8f93;
   font-weight: lighter;
@@ -114,8 +118,11 @@ button[type="submit"]:hover,
 }
 #intro .slogan{
   margin-top: 0;
-  padding: 0px 0 120px;
+  padding: 0px 0 100px;
   text-align: center;
+}
+#navbar{
+  overflow: visible;
 }
 #step-1, #step-2, #step-3{
   display: block;
@@ -204,18 +211,18 @@ button[type="submit"]:hover,
 .porquelibeat p{
   margin-top: 25px;
 }
-.nav a{
+.nav a, .filtro-violeta a{
   color: white;
   font-weight: lighter;
   font-size: 12px:;
 }
-.nav a, .navbar-toggle {
+.nav a, .navbar-toggle, .filtro-violeta a{
   opacity: .75;
   -webkit-transition: opacity .2s; /* Safari */
   transition: opacity .2s;
 }
-.nav img{
-  margin: 33px auto 20px;
+.nav img, .filtro-violeta .llamada-icon{
+  margin: 35px auto 20px;
 }
 .nav>li>a:hover, .nav>li>a:focus, .navbar-toggle:target{
   background-color: transparent; 
@@ -227,7 +234,8 @@ button[type="submit"]:hover,
 .nav .libeat-nav{
   width: 100px;
 }
-.nav .llamada-icon{
+.nav .llamada-icon, .filtro-violeta .llamada-icon{
+  margin-top: 55px;
   width: 22px;
 }
 .nav .trazo{
@@ -239,7 +247,7 @@ button[type="submit"]:hover,
   opacity: .7;
   width: 100%;
 }
-.navbar-collapse.in{
+.navbar-collapse.in, .filtro-violeta a{
   position: absolute;
   z-index: 100;
   text-align: center !important;
@@ -489,7 +497,7 @@ button[type="submit"]:hover,
     height: 620px;
   }
   #intro .slogan{
-    padding: 0px 0 160px;
+    padding: 0px 0 140px;
   }
   .main-pic{
   height: 620px;

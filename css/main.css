@@ -127,6 +127,7 @@ button[type="submit"]:hover,
 #step-1, #step-2, #step-3{
   display: block;
   margin: 0 auto 0;
+  max-width: 270px;
   width: 75%;
 }
 .bajada{

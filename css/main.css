@@ -215,7 +215,7 @@ button[type="submit"]:hover,
 .porquelibeat p{
   margin: 25px auto 0;
 }
-.porquelibeat p, .como-funciona p{
+.porquelibeat p, .como-funciona p, footer .requisitos-text{
   max-width: 530px;
 }
 .nav a, .filtro-violeta a{

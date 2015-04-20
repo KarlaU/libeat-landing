@@ -153,6 +153,9 @@ button[type="submit"]:hover,
 .clearfix .no-margin{
   margin: 0px;
 }
+.como-funciona p{
+  margin: 0 auto 0;
+}
 .filtro-violeta{
   background-image: url("../img/filtro-violeta-01.png");
   background-size: cover;
@@ -210,7 +213,10 @@ button[type="submit"]:hover,
   margin: 0 auto 0;
 }
 .porquelibeat p{
-  margin-top: 25px;
+  margin: 25px auto 0;
+}
+.porquelibeat p, .como-funciona p{
+  max-width: 530px;
 }
 .nav a, .filtro-violeta a{
   color: white;
